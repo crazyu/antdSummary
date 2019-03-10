@@ -63,6 +63,7 @@ class BasicForms extends PureComponent {
             <li>18.左侧菜单栏的样式，颜色修改：src/components/siderMenu 下面的less 文件， 全局的样式可在  src/global.less 增加样式</li>
             <li>19.当页面有table时候,  modal / 分页 重新调用查询方法需要带上查询条件</li>
             <li>20.table上 有 单挑数据选择的情况或者是有多选框的时候,完成对应的操作,需要重置 selectedrow：{} 为空的状态</li>
+            <li>21.对于table 中或者显示的文字过长，  使用Tooltip 包裹，并且 超长字符用省略号显示</li>
           </ul>
         </Card>
       </PageHeaderWrapper>
