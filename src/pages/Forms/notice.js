@@ -35,6 +35,7 @@ class BasicForms extends PureComponent {
     const test2="17.保存查询状态 1.首先在对应的model文件创建一个对象1.：searchInfo:{company:null}(查询条件的对象)2.查询的时候 调用保存的方法3.详情页返回:调用设置标志位方法flag:true，4在页面的初始化判断isReturn确定是否走条件查询";
     const test3="^((13[0-9])|(14[5,7])|(15[0-3,5-9])|(17[0,3,5-8])|(18[0-9])|166|198|199|(147))\\\\d{8}$";
     const email="(\"^[a-z0-9A-Z]+[- | a-z0-9A-Z . _]+@([a-z0-9A-Z]+(-[a-z0-9A-Z]+)?\\\\.)+[a-z]{2,}$\")";
+    const regex="/^[1-9]\\d{7}((0\\d)|(1[0-2]))(([0|1|2]\\d)|3[0-1])\\d{3}$|^[1-9]\\d{5}[1-9]\\d{3}((0\\d)|(1[0-2]))(([0|1|2]\\d)|3[0-1])\\d{3}([0-9]|X|x)$/";
 
     return (
       <PageHeaderWrapper
@@ -58,7 +59,7 @@ class BasicForms extends PureComponent {
             <li>13.页面的查询按钮以及保存按钮，使用loading</li>
             <li>14.接口获取 table数据源的时候,在页面上使用一个变量接收，查询的时候,清空dateSource中的值，不这样做。会有数据返回的是对的，但是显示的数据有问题</li>
             <li>15.form表单提交</li>
-            <li>16.当前手 机号校验正则:{test3},邮箱:{email}</li>
+            <li>16.当前手 机号校验正则:{test3},邮箱:{email},身份证：{regex}</li>
             <li>{test2}</li>
             <li>18.左侧菜单栏的样式，颜色修改：src/components/siderMenu 下面的less 文件， 全局的样式可在  src/global.less 增加样式</li>
             <li>19.当页面有table时候,  modal / 分页 重新调用查询方法需要带上查询条件</li>
